@@ -47,7 +47,7 @@ namespace Ex1
             int year = int.Parse(monthAndYear.Substring(3)); // só precisa do 3 pra cortar até o final
             Console.WriteLine("Name: " + worker.Name);
             Console.WriteLine("Department " + worker.Department.Name);
-            Console.WriteLine("Income for " + monthAndYear + ": " + worker.Income(year, month));
+            Console.WriteLine("Income for " + monthAndYear + ": R$" + worker.Income(year, month).ToString("F2", CultureInfo.InvariantCulture));
         }
     }
 }
